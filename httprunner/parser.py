@@ -8,7 +8,7 @@ from httprunner import exceptions, utils
 from httprunner.compat import basestring, builtin_str, numeric_types, str
 
 variable_regexp = r"\$([\w_]+)"
-function_regexp = r"\$\{([\w_]+\([\$\w\.\-/_ =,]*\))\}"
+function_regexp = r"\$\{([\w_]+\([:\$\w\.\-/_ =,]*\))\}"
 function_regexp_compile = re.compile(r"^([\w_]+)\(([\$\w\.\-/_ =,]*)\)$")
 
 
